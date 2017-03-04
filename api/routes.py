@@ -10,6 +10,6 @@ app.router.add_route('*', '/specs', SpecsView, apispec=spec)
 (
     app.router
     .add_route('*', '/auth/{some}', AuthView, apispec=spec)
-    .add_route('*', '/specs', SpecsView, apispec=spec)
-    .add_route('*', '/auth/{foo}/', AuthView, apispec=spec)
+    .add_route('*', '/specs', SpecsView)
+    .add_route('*', '/auth/{foo}/', AuthView)
 )
